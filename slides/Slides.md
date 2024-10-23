@@ -249,6 +249,59 @@ hogy minél kevesebb farmra kelljen menni?
 
 ---
 
+#### Példa:
+[900kg - H, 850kg - É, 800kg - É, 700kg - É, 600kg - É, 500kg - É, 400kg - É]
+
+1. Kezdjük a **középső tehénnel** (700kg).
+2. A sárkány tehenének mérete nagyobb vagy kisebb?
+   - Ha nagyobb, nézzük a **bal oldalt**.
+   - Ha kisebb, nézzük a **jobb oldalt**.
+3. Folytassuk az osztást, amíg meg nem találjuk a sárkány által megevett tehenet.
+
+---
+
+#### Miért hatékony a bináris keresés?
+
+- A bináris keresés minden lépésben a keresési területet **felezi meg**.
+- Ahelyett, hogy minden farmot végigjárnánk (lineáris keresés), csak **log₂(n)** farmot kell megnéznünk, ahol **n** a tehenek száma.
+- 128 tehén esetén a bináris keresés csak 7 lépést igényel ahelyett, hogy mind a 128-at megnéznénk!
+
+---
+
+#### Miért **$log₂(n)$**?
+
+Tegyük fel, hogy van egy $n$ méretű listánk. A kulcskérdés az: Hányszor tudjuk felezni ezt a listát, mielőtt már nincs több elem, amit keresnénk?
+
+1. Az első lépés után a lista mérete $n/2$ lesz.
+2. A második lépés után a lista mérete újra feleződik: $n/4$.
+3. A harmadik lépés után a lista mérete $n/8$, és így tovább.
+
+Ez a felezés addig folytatódik, amíg csak $1$ elem marad.
+
+---
+
+#### Miért **$log₂(n)$**?
+
+Minden lépésben a lista mérete a felére csökken. Ez azt jelenti, hogy $k$ lépés után a lista mérete: $n/2^k$
+
+
+A keresés akkor áll le, amikor a maradék lista mérete 1 lesz, azaz: $n/2^k = 1$
+
+
+Most oldjuk meg $k$-ra (a lépések számára), szorozzuk meg mindkét oldalt $2^k$-val: $n=2k$
+
+Most vegyük a kettes alapú logaritmust mindkét oldalból: $k=log⁡2(n)$
+
+Ez azt jelenti, hogy a lista 1 elemre való csökkentéséhez szükséges $k$ lépések száma $log₂(n)$.
+
+---
+
+#### Összefoglalás:
+
+- A bináris keresés csak **rendezett listákon** működik jól.
+- Hatékonyabb, mint minden elem egyenkénti ellenőrzése.
+- Ez azt jelenti, hogy a lista 1 elemre való csökkentéséhez szükséges $k$ lépések száma $log₂(n)$.
+
 ---
 
 ### Tojás
@@ -265,5 +318,7 @@ def eggs_solution(breaks):
     return 100
 
 ```
+
+---
 
 ---
