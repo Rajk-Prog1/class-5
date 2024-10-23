@@ -16,13 +16,6 @@ author: Bence Kovács
 
 ## Git, Github
 
----
-
-### Mi az a Git?
-
-A Git egy nyílt forráskódú, elosztott verziókezelő
-szoftver, vagy másképpen egy szoftverforráskód-kezelő
-rendszer.
 
 ---
 
@@ -197,6 +190,8 @@ rendszer.
 - A Git hatékony eszköz a kódváltoztatások kezelésére.
 - A GitHub megkönnyíti az együttműködést a felhőben tárolt repository-k segítségével.
 
+---
+
 ## Algoritmusok bevezető
 
 ---
@@ -232,12 +227,7 @@ def fib_better(n: int) -> int:
 
 ### Sárkányos feladat
 
-Egy elszabadult sárkányt keresünk, aki mindig a
-legnagyobb tehenet eszi meg a királyságban, majd
-ledől a környéken aludni. Mivel van tehénverseny
-minden évben, van egy listánk a tehenekről, méret
-szerint (csökkenő sorrend). Hogy fogunk neki a sárkány megtalálásának,
-hogy minél kevesebb farmra kelljen menni?
+Egy elszabadult sárkányt keresünk, aki mindig a legnagyobb tehenet eszi meg a királyságban, majd ledől a környéken aludni. Mivel van tehénverseny minden évben, van egy listánk a tehenekről, méret szerint (csökkenő sorrend). Hogy fogunk neki a sárkány megtalálásának, hogy minél kevesebb farmra kelljen menni?
 
 ---
 
@@ -318,7 +308,5 @@ def eggs_solution(breaks):
     return 100
 
 ```
-
----
 
 ---
