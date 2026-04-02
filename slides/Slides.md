@@ -278,7 +278,7 @@ Minden lépésben a lista mérete a felére csökken. Ez azt jelenti, hogy $k$ l
 A keresés akkor áll le, amikor a maradék lista mérete 1 lesz, azaz: $n/2^k = 1$
 
 
-Most oldjuk meg $k$-ra (a lépések számára), szorozzuk meg mindkét oldalt $2^k$-val: $n=2k$
+Most oldjuk meg $k$-ra (a lépések számára), szorozzuk meg mindkét oldalt $2^k$-val: $n=2^k$
 
 Most vegyük a kettes alapú logaritmust mindkét oldalból: $k=log⁡2(n)$
 
